@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>960</width>
+    <height>1088</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    border: 4px solid #db0000;
+    background-color: #cb4d4d;
+    color: #000000;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+QLabel:pressed {
+    background-color: #a3295a;
+}
+
+
+
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>Gestion de Inventarios</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <layout class="QFormLayout" name="formLayout">
+           <item row="1" column="0">
+            <widget class="QLabel" name="lbProducto">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+    color: #000000;
+    padding: 8px;
+}
+
+QLabel:pressed {
+    background-color: #a3295a;
+}
+
+
+
+</string>
+             </property>
+             <property name="text">
+              <string>PRODUCTO</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="txtProducto">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    border: 1px solid #3b29a3;
+    background-color: #4a33cc;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+QLineEdit:hover {
+    background-color: #8070db;
+}
+
+QLineEdit:pressed {
+    background-color: #3b29a3;
+}
+
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="lbCantidad">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+    color: #000000;
+    padding: 8px;
+}
+
+QLabel:pressed {
+    background-color: #a3295a;
+}
+
+</string>
+             </property>
+             <property name="text">
+              <string>CANTIDAD</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="txtCantidad">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    border: 1px solid #3b29a3;
+    background-color: #4a33cc;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+QLineEdit:hover {
+    background-color: #8070db;
+}
+
+QLineEdit:pressed {
+    background-color: #3b29a3;
+}
+
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="lbPrecio">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+    color: #000000;
+    padding: 8px;
+}
+
+QLabel:pressed {
+    background-color: #a3295a;
+}
+
+</string>
+             </property>
+             <property name="text">
+              <string>PRECIO</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLineEdit" name="txtPrecio">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    border: 1px solid #3b29a3;
+    background-color: #4a33cc;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+QLineEdit:hover {
+    background-color: #8070db;
+}
+
+QLineEdit:pressed {
+    background-color: #3b29a3;
+}
+
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="lbID">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+    color: #000000;
+    padding: 8px;
+}
+
+QLabel:pressed {
+    background-color: #a3295a;
+}
+
+
+
+</string>
+             </property>
+             <property name="text">
+              <string>ID</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="txtID">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    border: 1px solid #3b29a3;
+    background-color: #4a33cc;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+QLineEdit:hover {
+    background-color: #8070db;
+}
+
+QLineEdit:pressed {
+    background-color: #3b29a3;
+}
+
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_2" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QPushButton" name="btnAgregar">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    border: 4px solid #a04f03;
+    background-color: #bacc33;
+    color: #000000;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+QPushButton:hover {
+    background-color: #a04f03;
+}
+
+QPushButton:pressed {
+    background-color: #a3295a;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>AGREGAR</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnBuscar">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    border: 4px solid #a04f03;
+    background-color: #bacc33;
+    color: #000000;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+QPushButton:hover {
+    background-color: #a04f03;
+}
+
+QPushButton:pressed {
+    background-color: #a3295a;
+}
+
+</string>
+           </property>
+           <property name="text">
+            <string>BUSCAR</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnEliminar">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    border: 4px solid #a04f03;
+    background-color: #bacc33;
+    color: #000000;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+QPushButton:hover {
+    background-color: #a04f03;
+}
+
+QPushButton:pressed {
+    background-color: #a3295a;
+}
+
+
+</string>
+           </property>
+           <property name="text">
+            <string>ELIMINAR</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnActualizar">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    border: 4px solid #a04f03;
+    background-color: #bacc33;
+    color: #000000;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+QPushButton:hover {
+    background-color: #a04f03;
+}
+
+QPushButton:pressed {
+    background-color: #a3295a;
+}
+
+</string>
+           </property>
+           <property name="text">
+            <string>ACTUALIZAR</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnCancelar">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    border: 4px solid #a04f03;
+    background-color: #bacc33;
+    color: #000000;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+QPushButton:hover {
+    background-color: #a04f03;
+}
+
+QPushButton:pressed {
+    background-color: #a3295a;
+}</string>
+           </property>
+           <property name="text">
+            <string>CANCELAR</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_3" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_9">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_8">
+         <item>
+          <widget class="QTableWidget" name="tabla">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QTableWidget {
+    border: 4px solid #000000;
+    background-color: #56cb4d;
+    color: #000000;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+QTableWidget:pressed {
+    background-color: #a3295a;
+}
+
+</string>
+           </property>
+           <column>
+            <property name="text">
+             <string>ID</string>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>PRODUCTO</string>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>CANTIDAD</string>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>PRECIO</string>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </column>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_5" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <item>
+        <widget class="QPushButton" name="btnExportar">
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    border: 4px solid #a04f03;
+    background-color: #bacc33;
+    color: #000000;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+QPushButton:hover {
+    background-color: #a04f03;
+}
+
+QPushButton:pressed {
+    background-color: #a3295a;
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string>EXPORTAR</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <widget class="QPushButton" name="btnImportar">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    border: 4px solid #a04f03;
+    background-color: #bacc33;
+    color: #000000;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+QPushButton:hover {
+    background-color: #a04f03;
+}
+
+QPushButton:pressed {
+    background-color: #a3295a;
+}
+
+</string>
+           </property>
+           <property name="text">
+            <string>IMPORTAR</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>960</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
