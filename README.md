@@ -14,7 +14,7 @@ Qt Designer
 JSON
 
 How to Run: 
-Clone the repository: git clone https://github.com/tu-usuario/pyqt5-app.git
+Clone the repository: https://github.com/danielmorales27/PyQt5-app.git
 Navigate to the project folder: cd pyqt5-app
 Install dependencies: pip install -r requirements.txt
 Run the application: python main.py
@@ -50,7 +50,7 @@ Qt Designer
 JSON
 
 Como ejecutar:
-Clonar el repositorio: git clone https://github.com/tu-usuario/pyqt5-app.git
+Clonar el repositorio: https://github.com/danielmorales27/PyQt5-app.git
 Entrar a la carpeta del proyecto: cd pyqt5-app
 Instalar dependencias: pip install -r requirements.txt
 Ejecutar la aplicacion: python main.py
